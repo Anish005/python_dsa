@@ -1,3 +1,9 @@
+import sys
+sys.stdout = open('CP-sheet/output.txt','w')
+sys.stdin = open('CP-sheet/input.txt','r')
+
+
+
 t = int(input())
 for i in range(t):
     n, k =  map(int,input().split())
@@ -6,5 +12,4 @@ for i in range(t):
         print('NO')
     else:
         print('YES')
-        
-    
+
